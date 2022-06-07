@@ -1,5 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
+import Formulario from './formulario'
 
 test('quando o input estar vazio, novos participantes não podem ser adicionados', () => {
 
