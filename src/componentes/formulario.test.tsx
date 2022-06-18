@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import Formulario from './formulario'
 
 test('quando o input estar vazio, novos participantes não podem ser adicionados', () => {
+    render(<Formulario />)
 
     // Encontrar o input
     const input = screen.getByPlaceholderText('Insira os nomes dos participantes')
@@ -12,6 +13,5 @@ test('quando o input estar vazio, novos participantes não podem ser adicionados
     expect(input).toBeInTheDocument()
     // garantir que o botão esteja desabilitado
     expect(botao).toBeDisabled()
-    render(<Formulario />)
     
 })
