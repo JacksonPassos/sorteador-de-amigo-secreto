@@ -30,7 +30,7 @@ const Sorteio = () => {
                     required
                     name="participanteDavez"
                     id="participanteDavez"
-                    placeholder="Selecione o seu nome"
+                    placeholder="Selecione o participante"
                     value={participanteDaVez}
                     onChange={evento => setParticipanteDaVez(evento.target.value)}
                 >
